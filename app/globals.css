@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 242 245 243;
+  --ink: 20 34 28;
+  --muted: 90 107 99;
+  --line: 211 221 215;
+  --accent: 15 92 63;
+  --panel: 232 238 234;
+}
+.dark {
+  --bg: 13 21 18;
+  --ink: 228 236 231;
+  --muted: 149 168 158;
+  --line: 40 56 48;
+  --accent: 124 201 164;
+  --panel: 20 31 26;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+body { @apply bg-bg font-sans text-ink antialiased; }
+:focus-visible { outline: 2px solid rgb(var(--accent)); outline-offset: 3px; border-radius: 2px; }
+
+/* Hero API panel: the one orchestrated moment on the page */
+@keyframes line-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.reveal-line { opacity: 0; animation: line-in 0.4s ease-out forwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal-line { opacity: 1; animation: none; }
+}
