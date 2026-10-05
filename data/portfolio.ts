@@ -15,7 +15,7 @@ export const profile = {
   email: "apsarababu77@gmail.com",
   phone: "+91 90376 80752",
   linkedin: "https://www.linkedin.com/in/apsara-rb59794280",
-  github: "", // Add your GitHub profile URL to show it on the site
+  github: "https://github.com/apsara-dev", // Add your GitHub profile URL to show it on the site
   resume: "/Apsara_R_Resume.pdf",
 };
 
@@ -36,8 +36,8 @@ export const projects = [
     ],
     outcome: "Deployed and available as a live demo.",
     tech: ["ReactJS", "Django", "REST API", "JWT"],
-    demo: "", // Paste your Live Demo URL here
-    code: "", // Paste the repository URL here
+    demo: "https://expense-tracker-frontend-one-chi.vercel.app/", // Paste your Live Demo URL here
+    code: "https://github.com/apsara-dev/expense-tracker-frontend", // Paste the repository URL here
   },
   {
     name: "Bird Species Classification Through Audio Analysis",
